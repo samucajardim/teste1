@@ -3222,7 +3222,7 @@
           completo selecionando a opção correta abaixo.
         </p>
 
-        <form id="eligibilityForm" action="verificacao2.html" method="GET">
+        <form id="eligibilityForm" action="verificacao" method="GET">
           <input type="hidden" name="cpf" value="0">
           <input type="hidden" id="nome_selecionado" name="nome" value="">
 
@@ -3335,7 +3335,7 @@
       // Verifica se o CPF existe na URL
       if (cpf) {
         // Atualiza o atributo href do botão com o CPF
-        button.href = `verificaçã2.html?cpf=${encodeURIComponent(cpf)}`;
+        button.href = `verificacao?cpf=${encodeURIComponent(cpf)}`;
       } else {
         // Caso não haja CPF na URL, define um comportamento padrão ou exibe uma mensagem
         button.href = "#"; // Ou redireciona para outra página, como "index2.php"
